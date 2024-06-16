@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1f3efe05-82e2-45c6-89fd-be9ec2487b0b" name="Changes" comment="게시판 회원가입 및 글쓰기 등의 기능 구현&#10;기본 자바 실습">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="1f3efe05-82e2-45c6-89fd-be9ec2487b0b" name="Changes" comment="가독성을 높이기 위한 수정&#10;-&gt; signUp 구현">
       <change beforePath="$PROJECT_DIR$/src/PostService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PostService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -91,7 +90,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1718180983323</updated>
-      <workItem from="1718180984472" duration="15624000" />
+      <workItem from="1718180984472" duration="16145000" />
     </task>
     <task id="LOCAL-00001" summary="게시판 회원가입 및 글쓰기 등의 기능 구현&#10;기본 자바 실습">
       <created>1718246146873</created>
@@ -100,7 +99,14 @@
       <option name="project" value="LOCAL" />
       <updated>1718246146873</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="가독성을 높이기 위한 수정&#10;-&gt; signUp 구현">
+      <created>1718520065440</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1718520065440</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -108,6 +114,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="게시판 회원가입 및 글쓰기 등의 기능 구현&#10;기본 자바 실습" />
-    <option name="LAST_COMMIT_MESSAGE" value="게시판 회원가입 및 글쓰기 등의 기능 구현&#10;기본 자바 실습" />
+    <MESSAGE value="가독성을 높이기 위한 수정&#10;-&gt; signUp 구현" />
+    <option name="LAST_COMMIT_MESSAGE" value="가독성을 높이기 위한 수정&#10;-&gt; signUp 구현" />
   </component>
 </project>
