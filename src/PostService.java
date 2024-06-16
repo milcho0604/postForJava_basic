@@ -34,11 +34,10 @@ public class PostService {
                 AuthorDetail();
             } else if (input == 4) {
                 WritePost();            // 게시글 작성
-
             } else if (input == 5) {
                 AllPostInquiry();       // 전체게시글 조회
             } else if (input == 6) {
-                PostDetail();              // 게시글 상세 조회
+                PostDetail();           // 게시글 상세 조회
 
             }
         }
@@ -149,14 +148,26 @@ class Author {
         return password;
     }
 
-    public void authorInquiry() {      // 전체 조회
+    public void authorInquiry() {
         for (int i = 0; i < author_id; i++) {
             System.out.println("id는 " + a_id + "입니다. " + "이메일은 " + email + "입니다.");
         }
     }
 
     public void detailAuthor(long id) {
-        System.out.println("id : " + a_id + ", 이름 : " + name + " , email : " + email + ", 비밀번호 : " + password);
+        String maskedPassword = maskPassword(password);
+        System.out.println("id : " + a_id + ", 이름 : " + name + " , email : " + email + ", 비밀번호 : " + maskedPassword);
+    }
+//    비밀번호 마스킹 처리를 위한 메서드 구현(어떻게 하는지 몰라서 찾아보았음.
+    private String maskPassword(String password){
+        int length = password.length();
+        if (length <= 4) {
+            return "****"; // 비밀번호가 4자리 이하인 경우 전체를 마스킹
+        } else {
+            String visiblePart = password.substring(0, 4); // 앞 4자리는 보이도록 처리
+            String maskedPart = password.substring(4).replaceAll(".", "*"); // 나머지는 마스킹 처리
+            return visiblePart + maskedPart;
+        }
     }
 
 
