@@ -4,15 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1f3efe05-82e2-45c6-89fd-be9ec2487b0b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/PostService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test2.iml" afterDir="false" />
+    <list default="true" id="1f3efe05-82e2-45c6-89fd-be9ec2487b0b" name="Changes" comment="switch문으로 변경&#10;-&gt; 가독성">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PostService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PostService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,10 +41,11 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.PostService (2)">
+  <component name="RunManager" selected="Application.PostService (3)">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="test2" />
@@ -72,6 +67,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PostService (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="PostService" />
+      <module name="test2" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="PostService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="PostService" />
       <module name="test2" />
@@ -81,9 +83,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.PostService (3)" />
+        <item itemvalue="Application.PostService" />
         <item itemvalue="Application.PostService (2)" />
         <item itemvalue="Application.PostService (1)" />
-        <item itemvalue="Application.PostService" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -96,11 +99,55 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1718180983323</updated>
-      <workItem from="1718180984472" duration="10095000" />
+      <workItem from="1718180984472" duration="19252000" />
     </task>
+    <task id="LOCAL-00001" summary="게시판 회원가입 및 글쓰기 등의 기능 구현&#10;기본 자바 실습">
+      <created>1718246146873</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1718246146873</updated>
+    </task>
+    <task id="LOCAL-00002" summary="가독성을 높이기 위한 수정&#10;-&gt; signUp 구현">
+      <created>1718520065440</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1718520065440</updated>
+    </task>
+    <task id="LOCAL-00003" summary="AllAuhtorInquiry,&#10;AuthorDetail,&#10;WritePost,&#10;AllPostInquiry,&#10;PostDetail&#10;구현">
+      <created>1718520473039</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1718520473039</updated>
+    </task>
+    <task id="LOCAL-00004" summary="비밀번호 앞 4자리를 제외한 마스킹처리 메서드 구현">
+      <created>1718520886972</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1718520886972</updated>
+    </task>
+    <task id="LOCAL-00005" summary="switch문으로 변경&#10;-&gt; 가독성">
+      <created>1718521262878</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1718521262878</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="게시판 회원가입 및 글쓰기 등의 기능 구현&#10;기본 자바 실습" />
+    <MESSAGE value="가독성을 높이기 위한 수정&#10;-&gt; signUp 구현" />
+    <MESSAGE value="AllAuhtorInquiry,&#10;AuthorDetail,&#10;WritePost,&#10;AllPostInquiry,&#10;PostDetail&#10;구현" />
+    <MESSAGE value="비밀번호 앞 4자리를 제외한 마스킹처리 메서드 구현" />
+    <MESSAGE value="switch문으로 변경&#10;-&gt; 가독성" />
+    <option name="LAST_COMMIT_MESSAGE" value="switch문으로 변경&#10;-&gt; 가독성" />
   </component>
 </project>
