@@ -4,15 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1f3efe05-82e2-45c6-89fd-be9ec2487b0b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/PostService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test2.iml" afterDir="false" />
+    <list default="true" id="1f3efe05-82e2-45c6-89fd-be9ec2487b0b" name="Changes" comment="게시판 회원가입 및 글쓰기 등의 기능 구현&#10;기본 자바 실습">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PostService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PostService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +41,7 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -96,11 +91,23 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1718180983323</updated>
-      <workItem from="1718180984472" duration="10095000" />
+      <workItem from="1718180984472" duration="15624000" />
     </task>
+    <task id="LOCAL-00001" summary="게시판 회원가입 및 글쓰기 등의 기능 구현&#10;기본 자바 실습">
+      <created>1718246146873</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1718246146873</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="게시판 회원가입 및 글쓰기 등의 기능 구현&#10;기본 자바 실습" />
+    <option name="LAST_COMMIT_MESSAGE" value="게시판 회원가입 및 글쓰기 등의 기능 구현&#10;기본 자바 실습" />
   </component>
 </project>

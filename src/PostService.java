@@ -1,4 +1,5 @@
 
+import java.security.Signature;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -17,21 +18,16 @@ import java.util.Scanner;
 //6. 게시글 상세 조회
 //-> id, title, contents, 저자(email or name or author_id)
 public class PostService {
+    static Scanner sc = new Scanner(System.in);
+    static List<Author> authors = new ArrayList<>();
+    static List<Post> posts = new ArrayList<>();
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        List<Author> authors = new ArrayList<>();
-        List<Post> posts = new ArrayList<>();
 
         while (true) {
             System.out.println("원하시는 서비스 번호를 입력해주세요 :\n 1. 회원가입\n 2. 회원 전체 목록 조회\n 3. 회원 상세 조회\n 4. 게시글 작성\n 5. 게시글 목록 조회\n 6. 게시글 상세 조회");
             int input = sc.nextInt();
             if (input == 1) {
-                System.out.println("회원가입을 위해 이름, 이메일, 비밀번호를 작성해주세요");
-                String name = sc.next();
-                String email = sc.next();
-                String password = sc.next();
-                Author author = new Author(name, email, password);
-                authors.add(author);
+                SignAuthor();
             } else if (input == 2) {
                 System.out.println("전체 회원목록을 조회합니다");
                 for (int i = 0; i < authors.size(); i++) {
@@ -85,6 +81,15 @@ public class PostService {
             }
         }
     }
+    public static void SignAuthor(){
+        System.out.println("회원가입을 위해 이름, 이메일, 비밀번호를 작성해주세요");
+        String name = sc.nextLine();
+        String email = sc.nextLine();
+        String password = sc.nextLine();
+        Author author = new Author(name, email, password);
+        authors.add(author);
+    }
+
 }
 
 class Author {
@@ -99,7 +104,6 @@ class Author {
     public Author(String email) {
         this.email = email;
     }
-
 
     Author(String name, String email, String password) {
         author_id += 1;
