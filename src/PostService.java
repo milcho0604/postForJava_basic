@@ -26,19 +26,30 @@ public class PostService {
         while (true) {
             System.out.println("원하시는 서비스 번호를 입력해주세요 :\n 1. 회원가입\n 2. 회원 전체 목록 조회\n 3. 회원 상세 조회\n 4. 게시글 작성\n 5. 게시글 목록 조회\n 6. 게시글 상세 조회");
             int input = sc.nextInt();
-            if (input == 1) {           // 회원가입
-                SignAuthor();
-            } else if (input == 2) {    // 전체회원목록 조회
-                AllAuhtorInquiry();
-            } else if (input == 3) {    // 회원 상세 조회
-                AuthorDetail();
-            } else if (input == 4) {
-                WritePost();            // 게시글 작성
-            } else if (input == 5) {
-                AllPostInquiry();       // 전체게시글 조회
-            } else if (input == 6) {
-                PostDetail();           // 게시글 상세 조회
-
+            switch (input) {
+                case 0:
+                    System.out.println("프로그램을 종료합니다");
+                    return;
+                case 1:
+                    SignAuthor();           // 회원가입
+                    break;
+                case 2:
+                    AllAuhtorInquiry();     // 전체회원목록 조회
+                    break;
+                case 3:
+                    AuthorDetail();         // 회원 상세 조회
+                    break;
+                case 4:
+                    WritePost();            // 게시글 작성
+                    break;
+                case 5:
+                    AllPostInquiry();       // 전체게시글 조회;
+                    break;
+                case 6:
+                    PostDetail();           // 게시글 상세 조회
+                    break;
+                default:
+                    System.out.println("잘못된 입력입니다. 다시 입력해주세요.");
             }
         }
     }
@@ -49,6 +60,7 @@ public class PostService {
         String password = sc.nextLine();
         Author author = new Author(name, email, password);
         authors.add(author);
+        System.out.println("회원가입이 완료되었습니다.");
     }
     public static void AllAuhtorInquiry(){
         System.out.println("전체 회원목록을 조회합니다");
